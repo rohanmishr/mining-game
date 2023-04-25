@@ -1,0 +1,2 @@
+# mining-game
+a game
