@@ -1,0 +1,2 @@
+Items are made in CSV format, different file for each category
+This prevents javascript class spamming
