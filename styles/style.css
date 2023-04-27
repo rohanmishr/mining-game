@@ -1,1 +1,106 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+}
+
 #loader{display: none;}
+
+#top {
+    background-color: rgb(175, 175, 175);
+}
+#top-inner {
+    display: inline-block;
+    background-color: gray;
+    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
+    height: 5vh;
+}
+
+#money {
+    background-color: rgb(158, 255, 139);
+    display: inline-block;
+    width: 15vw;
+    height: 4vh;
+    border-radius: 1vh;
+    font-size: 2vw;
+    font-weight: bold;
+    padding-left: 1vw;
+}
+
+#research {
+    background-color: rgb(110, 211, 245);
+    display: inline-block;
+    width: 15vw;
+    height: 4vh;
+    border-radius: 1vh;
+    font-size: 2vw;
+    font-weight: bold;
+    padding-left: 1vw;
+}
+
+#main {
+    text-align: center;
+    padding-top: 3vh;
+}
+
+#mine, #upgraders, #furnace {
+    display: inline-block;
+    width: 30vw;
+    height: 30vw;
+    border: 1px solid gray;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+#upgraders {
+    overflow-y: scroll;
+}
+
+.shop-item {
+    width: 7vw;
+    height: 7vw;
+    border-radius: 1.5vw;
+    display: inline-block;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.shop-item:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+.shop-item-tooltip {
+    display: none;
+    position: absolute;
+}
+
+.shop-item-tooltip-container {
+    position: relative;
+}
+
+.shop-item:hover .shop-item-tooltip {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.common {
+    background-color: rgb(179, 179, 179);
+    border: 0.75vh solid gray;
+}
+
+.uncommon {
+    background-color: rgb(71, 255, 71);
+    border: 0.75vh solid rgb(0, 179, 0);
+}
+
+.rare {
+    background-color: rgb(65, 163, 255);
+    border: 0.75vh solid rgb(33, 122, 255);
+}

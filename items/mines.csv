@@ -1,2 +1,9 @@
 name,rarity,description,value
-iron mine,common,A basic mine to get started., 2
+Iron Mine,common,A basic mine to get started.,2
+Copper Mine,common,A copper mine that produces higher value ores.,5
+Silver Mine,common,Silver is valued higher than copper in the mining economy.,10
+Gold Mine,uncommon,A popular currency that also happens to have many practical uses.,25
+Emerald Mine,uncommon,Emeralds are highly wanted for their rarity and beauty.,50
+Ruby Mine,uncommon,A red gemstone commonly used in jewelry; produces a nice amount of money.,100
+Sapphire Mine,uncommon,A blue gemstone that is also commonly used in jewelry.,250
+Diamond Mine,rare,Diamonds - one of the most regarded ores.,500
