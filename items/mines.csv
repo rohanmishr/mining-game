@@ -1,9 +1,20 @@
-name,rarity,description,value
-Iron Mine,common,A basic mine to get started.,2
-Copper Mine,common,A copper mine that produces higher value ores.,5
-Silver Mine,common,Silver is valued higher than copper in the mining economy.,10
-Gold Mine,uncommon,A popular currency that also happens to have many practical uses.,25
-Emerald Mine,uncommon,Emeralds are highly wanted for their rarity and beauty.,50
-Ruby Mine,uncommon,A red gemstone commonly used in jewelry; produces a nice amount of money.,100
-Sapphire Mine,uncommon,A blue gemstone that is also commonly used in jewelry.,250
-Diamond Mine,rare,Diamonds - one of the most regarded ores.,500
+name,rarity,description,cost,value,space
+Iron Mine,common,A basic mine to get started.,30,2,6
+Copper Mine,common,A copper mine that produces higher value ores.,670,5,8
+Silver Mine,common,Silver is valued higher than copper in the mining economy.,1700,10,8
+Gold Mine,uncommon,A popular currency that also happens to have many practical uses.,9600,25,8
+Emerald Mine,uncommon,Emeralds are highly wanted for their rarity and beauty.,23050,50,10
+Ruby Mine,uncommon,A red gemstone commonly used in jewelry; produces a nice amount of money.,120000,100,10
+Sapphire Mine,uncommon,A blue gemstone that is also commonly used in jewelry.,989000,250,10
+Diamond Mine,rare,Diamonds - one of the most regarded ores.,11000700,500,10
+Crystal Mine,rare,"The crystal mine is smaller than the rest, but packs a significantly higher value.",100M,1500,4
+Jade Mine,rare,,790M,5000,7
+Barium Mine,rare,,3.2B,15000,12
+Plutonium Mine,epic,,57B,50000,12
+Uranium Mine,epic,,800B,100000,14
+Firecrystal Mine,epic,,4.5T,350000,10
+Concentrated Gold Mine,legendary,,594T,1000000,9
+Hardened Diamond Mine,legendary,,10qd,5000000,9
+Osmium Mine,legendary,,550qd,7500000,12
+Astatine Mine,legendary,,2.5Qn,20000000,15
+Dragonglass Mine,mythic,,50Qn,50000000,25

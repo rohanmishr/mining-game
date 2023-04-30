@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 #loader{display: none;}
@@ -18,24 +19,31 @@ body {
 
 #money {
     background-color: rgb(158, 255, 139);
-    display: inline-block;
+    display: inline-flex;
     width: 15vw;
     height: 4vh;
     border-radius: 1vh;
-    font-size: 2vw;
+    font-size: 1.75vw;
     font-weight: bold;
     padding-left: 1vw;
+    align-items: center;
 }
 
 #research {
     background-color: rgb(110, 211, 245);
-    display: inline-block;
+    display: inline-flex;
     width: 15vw;
     height: 4vh;
     border-radius: 1vh;
-    font-size: 2vw;
+    font-size: 1.75vw;
     font-weight: bold;
     padding-left: 1vw;
+}
+
+#capacity {
+    display: inline-flex;
+    font-size: 1.5vw;
+    align-items: center;
 }
 
 #main {
@@ -43,13 +51,14 @@ body {
     padding-top: 3vh;
 }
 
-#mine, #upgraders, #furnace {
+#mines, #upgraders, #furnace {
     display: inline-block;
     width: 30vw;
     height: 30vw;
     border: 1px solid gray;
     margin-right: 1vw;
     margin-left: 1vw;
+    overflow: auto;
 }
 
 #upgraders {
