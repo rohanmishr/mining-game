@@ -1,5 +1,5 @@
 name,rarity,description,cost,value,space
-Iron Mine,common,A basic mine to get started.,30,2,6
+Iron Mine,common,A basic mine to get started.,50,2,6
 Copper Mine,common,A copper mine that produces higher value ores.,670,5,8
 Silver Mine,common,Silver is valued higher than copper in the mining economy.,1700,10,8
 Gold Mine,uncommon,A popular currency that also happens to have many practical uses.,9600,25,8
@@ -11,10 +11,10 @@ Crystal Mine,rare,"The crystal mine is smaller than the rest, but packs a signif
 Jade Mine,rare,,790M,5000,7
 Barium Mine,rare,,3.2B,15000,12
 Plutonium Mine,epic,,57B,50000,12
-Uranium Mine,epic,,800B,100000,14
-Firecrystal Mine,epic,,4.5T,350000,10
-Concentrated Gold Mine,legendary,,594T,1000000,9
-Hardened Diamond Mine,legendary,,10qd,5000000,9
-Osmium Mine,legendary,,550qd,7500000,12
-Astatine Mine,legendary,,2.5Qn,20000000,15
-Dragonglass Mine,mythic,,50Qn,50000000,25
+Uranium Mine,epic,,800B,100k,14
+Firecrystal Mine,epic,,4.5T,350k,10
+Concentrated Gold Mine,legendary,,594T,1M,9
+Hardened Diamond Mine,legendary,,10qd,5M,9
+Osmium Mine,legendary,,550qd,7.5M,12
+Astatine Mine,legendary,,2.5Qn,20M,15
+Dragonglass Mine,mythic,,50Qn,50M,25

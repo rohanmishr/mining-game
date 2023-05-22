@@ -1,0 +1,44 @@
+.common {
+    background-color: rgb(179, 179, 179);
+    border: 0.75vh solid gray;
+}
+
+.uncommon {
+    background-color: rgb(71, 255, 71);
+    border: 0.75vh solid rgb(0, 179, 0);
+}
+
+.rare {
+    background-color: rgb(65, 163, 255);
+    border: 0.75vh solid rgb(33, 122, 255);
+}
+
+.epic {
+    background-color: rgb(198, 82, 198);
+    border: 0.75vh solid rgb(187, 48, 187)
+}
+
+.legendary {
+    background-color: rgb(255, 183, 0);
+    border: 0.75vh solid rgb(255, 225, 0);
+}
+
+.mythic {
+    background-color: rgb(252, 166, 247);
+    border: 0.75vh solid rgb(248, 138, 230);
+}
+
+.divine {
+    background-color: rgb(37, 51, 200);
+    border: 0.75vh solid rgb(83, 94, 247);
+}
+
+.alimghty {
+    background-color: rgb(23, 115, 2);
+    border: 0.75vh solid rgb(14, 142, 2);
+}
+
+.ascended {
+    background-color: rgb(121, 255, 246);
+    border: 0.75vh solid rgb(187, 255, 244);
+}

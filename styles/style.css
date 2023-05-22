@@ -13,15 +13,15 @@ body {
 #top-inner {
     display: inline-block;
     background-color: gray;
-    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
     height: 5vh;
+    padding: 0.5vh;
 }
 
 #money {
     background-color: rgb(158, 255, 139);
     display: inline-flex;
     width: 15vw;
-    height: 4vh;
+    height: 5vh;
     border-radius: 1vh;
     font-size: 1.75vw;
     font-weight: bold;
@@ -33,11 +33,13 @@ body {
     background-color: rgb(110, 211, 245);
     display: inline-flex;
     width: 15vw;
-    height: 4vh;
+    height: 5vh;
     border-radius: 1vh;
     font-size: 1.75vw;
     font-weight: bold;
     padding-left: 1vw;
+    overflow: none;
+    align-items: center;
 }
 
 #capacity {
@@ -58,6 +60,9 @@ body {
     border: 1px solid gray;
     margin-right: 1vw;
     margin-left: 1vw;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
     overflow: auto;
 }
 
@@ -69,47 +74,44 @@ body {
     width: 7vw;
     height: 7vw;
     border-radius: 1.5vw;
-    display: inline-block;
-    overflow: hidden;
+    display: inline-flex;
+    position: relative;
     transition: 0.25s;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
 
 .shop-item:hover {
     cursor: pointer;
     filter: brightness(1.1);
+    z-index: 2;
 }
 
 .shop-item-tooltip {
-    display: none;
+    visibility: hidden;
     position: absolute;
-}
-
-.shop-item-tooltip-container {
-    position: relative;
-}
-
-.shop-item:hover .shop-item-tooltip {
-    display: block;
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%);
+    z-index: 999;
+    width: 13vw;
+    height: 20vh;
+    overflow: scroll;
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
     border-radius: 1vw;
     padding: 1vw;
     font-size: 1.5vw;
-    font-weight: bold;
+    /*left: 105%;*/
+}
+
+.shop-item-tooltip-title {
+    font-size: 1.5vw;
+}
+
+.shop-item:hover .shop-item-tooltip {
+    visibility: visible;
     z-index: 2;
-}
-
-.common {
-    background-color: rgb(179, 179, 179);
-    border: 0.75vh solid gray;
-}
-
-.uncommon {
-    background-color: rgb(71, 255, 71);
-    border: 0.75vh solid rgb(0, 179, 0);
-}
-
-.rare {
-    background-color: rgb(65, 163, 255);
-    border: 0.75vh solid rgb(33, 122, 255);
 }

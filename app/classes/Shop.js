@@ -1,32 +1,35 @@
 class Shop {
     static add(item) {
         if(item.constructor.name == "Mine"){
-            $("#shop-mines")[0].innerHTML += `
-            <div class="shop-item ${item.rarity}" onclick="Shop.buyItem('${item.name}')">
-                ${item.name}
-                <div class="shop-item-tooltip-container">
-                    <div class="shop-item-tooltip">
-                        <div class="shop-item-tooltip-title">${item.name}</div>
-                        <div class="shop-item-tooltip-description">${item.description}</div>
-                    </div>
-                </div>
-            </div>
-            `;
+            //name rarity description cost space
+            $("#shop-mines")[0].innerHTML += 
+                new Icon(item.name, item.rarity, item.description, numToSuffix(item.cost), item.space)
+                .html();
+        }
+
+        if(item.constructor.name == "Upgrader"){
+            $("#shop-upgraders")[0].innerHTML += 
+                new Icon(item.name, item.rarity, item.description, numToSuffix(item.cost), item.space)
+                .html();
         }
     }
 
-    static buyItem(itemName) {
+    static buyItem(itemName) { try {
         //create the item array, used for finding items by name
         var items = [];
-        items = items.concat(mines); //.concat to add the other categories in the future
+        items = items.concat(mines).concat(upgraders) //.concat to add the other categories in the future
         //find the item by name
         for(var i = 0; i < items.length; i++) {
             if(items[i].name == itemName) {
+                if(Profile.money < items[i].cost) {
+                    alert(`Not enough money! (${items[i].cost})`);
+                    return;
+                }
                 Profile.owned.push(items[i]);
                 Profile.money -= items[i].cost;
+                Profile.updateDashboard();
+                return;
             }
-        }
-
-        Profile.updateDashboard();
+        }   } catch(e) { alert(e) };
     }
 }
